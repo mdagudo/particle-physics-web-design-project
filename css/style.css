@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@400;751&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark-mode {
+    background-color: rgba(39, 39, 39, 0.918);
+    color: rgb(235, 231, 231);
+}
+
+.btn-darkmode {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-darkmode img {
+    width: 25px;
+    height: 25px;
+}
+
+.header {
+    height: 56px;
+}
+
+.navbar {
+    background: rgb(240,235,255);
+    background: linear-gradient(111deg, rgba(240,235,255,1) 0%, rgba(190,154,244,1) 32%, rgba(168,163,255,1) 56%, rgba(163,147,255,1) 81%, rgba(255,203,234,1) 100%);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 751;
+}
+
+.dropdown-menu {
+    background:rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 7.5vw;
+    font-family: 'Playfair Display SC', serif;
+}
+
+h2 {
+     font-size: 5vw;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+.flex-container {
+    width: 95%;
+    display: flex;
+    gap: 15px;
+}
+
+.flex-container img {
+    width: 10vw;
+}
+
+.hero {
+    width: 100vw;
+}
+
+.cern-content {
+    margin: 0px 40px;
+}
+
+.clearfix {
+    margin: 0px 40px;
+}
+
+.clearfix img {
+    width: 35vw;
+}
+
+#CERNlogo {
+    width: 3.5vw;
+    height: 3.5vw;
+    align-self: center;
+}
+
+.map-responsive {
+    height: 400px;
+}
+
+.carousel {
+    margin: 20px auto;
+    width: 50vw;
+}
+
+#carousel-title {
+    text-align: center;
+}
+
+footer {
+    height: 3vw;
+    background: rgb(240,235,255);
+    background: linear-gradient(111deg, rgba(240,235,255,1) 0%, rgba(190,154,244,1) 32%, rgba(168,163,255,1) 56%, rgba(163,147,255,1) 81%, rgba(255,203,234,1) 100%);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.center p {
+    font-size: 1vw;
+    margin-bottom: 0;
+}
+
+.arrow {
+    animation: slide1 1s ease-in-out infinite;
+}
+
+.acc-arrow img {
+    width: 5vw;
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 5px);
+  }
+}
+

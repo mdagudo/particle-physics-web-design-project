@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerators</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/show-and-hide.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+
+        <div class="header">
+            <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+                <div class="align-self-start ms-3 d-flex">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="./images/particle-accelerator.png" width="30" height="30"
+                            class="d-inline-block align-top" alt="logo">
+                        Particle Physics
+                    </a>
+                </div>
+
+                <div class="buttons">
+                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button class="btn-darkmode me-3" onclick="darkMode()">
+                        <img src="./images/moon-half-visible-face-on-light-and-half-on-darkness.png"
+                            alt="dark mode button">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ms-4 justify-content-md-end me-4" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Standard
+                                Model</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="fermions.html">Fermions</a></li>
+                                <li><a class="dropdown-item" href="bosons.html">Bosons</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accelerators.html">Accelerators</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="content mt-4">
+        <div class="cern-content mb-3 mb-lg-5">
+            <div class="cern-title">
+                <h3 class="mb-2">CERN <img id="CERNlogo" class="align-bottom" src="./images/CERN-logo.jpg"
+                        alt="CERN logo">
+                </h3>
+            </div>
+            <p>The European Organization for Nuclear Research (CERN) was founded in 1954, the CERN laboratory sits
+                astride the Franco-Swiss border near Geneva. It was one of Europe's first
+                joint ventures and now has 23 member states. Physicists and engineers at CERN use the world's largest
+                and most complex scientific instruments to study the basic
+                constituents of matter – fundamental particles. Subatomic particles are made to collide together at
+                close to the speed
+                of light. The process gives us clues about how the particles interact, and provides insights into the
+                fundamental laws
+                of nature.</p>
+
+            <p>You can see CERN's location in the following map:</p>
+
+            <div class="map-responsive text-center mb-3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11039.201573877683!2d6.0404368814850375!3d46.23431402757674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCERN!5e0!3m2!1ses-419!2sve!4v1648217316300!5m2!1ses-419!2sve"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <p>The instruments used at CERN are purpose-built particle accelerators and detectors. Accelerators boost
+                beams of
+                particles to high energies before the beams are made to collide with each other or with stationary
+                targets. Detectors
+                observe and record the results of these collisions <a href="https://home.cern/about">[7]</a>.</p>
+
+        </div>
+
+        <div class="clearfix mb-3">
+            <img src="./images/accelerator.jpg" alt="Particle Accelerator"
+                class="col-md-6 float-md-start mb-3 me-md-5 mx-auto d-block">
+            <h3 class="mb-3">What is an Accelerator?</h3>
+            <div class="col-sm">
+                <p>A particle accelerator is a machine that accelerates elementary particles, such as electrons or
+                    protons, to very high
+                    energies. On a basic level, particle accelerators produce beams of charged particles that can be
+                    used for a variety of
+                    research purposes. There are two basic types of particle accelerators: linear accelerators and
+                    circular accelerators.
+                    Linear accelerators propel particles along a linear, or straight, beam line. Circular accelerators
+                    propel particles
+                    around a circular track. Linear accelerators are used for fixed-target experiments, whereas circular
+                    accelerators can be
+                    used for both colliding beam and fixed target experiments <a
+                        href="https://www.energy.gov/articles/how-particle-accelerators-work">[8]</a>.</p>
+
+            </div>
+        </div>
+
+        <div class="clearfix mb-3">
+            <img src="./images/accelerator1.avif" alt="Particle accelerator at CERN"
+                class="col-md-6 float-md-end mb-3 ms-md-5 mx-auto d-block">
+            <h3 class="mb-3">How do Accelerators Work?</h3>
+            <div class="col-sm">
+                <p>Particle accelerators use electric fields to speed up and increase the energy of a beam of particles,
+                    which are steered
+                    and focused by magnetic fields. The particle source provides the particles, such as protons or
+                    electrons, that are to be
+                    accelerated. The beam of particles travels inside a vacuum in the metal beam pipe. The vacuum is
+                    crucial to maintaining
+                    an air and dust free environment for the beam of particles to travel unobstructed. Electromagnets
+                    steer and focus the
+                    beam of particles while it travels through the vacuum tube.</p>
+
+                <p>Electric fields spaced around the accelerator switch from positive to negative at a given frequency,
+                    creating radio
+                    waves that accelerate particles in bunches. Particles can be directed at a fixed target, such as a
+                    thin piece of metal
+                    foil, or two beams of particles can be collided. Particle detectors record and reveal the particles
+                    and radiation that
+                    are produced by the collision between a beam of particles and the target <a
+                        href="https://www.energy.gov/articles/how-particle-accelerators-work">[8]</a>.</p>
+            </div>
+        </div>
+
+        <div id="carousel-title">
+            <h3 class="mb-3">Meet CERN's Large Hadron Collider</h3>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="LHC">
+                    <img src="images/LHC.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Large Hadron Collider</h5>
+                        <!-- <p>The biggest particle accelerator in the world.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item" id="ALICE">
+                    <img src="images/ALICE.png" class="d-block w-100" alt="LHC's ATLAS detector.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>ALICE detector</h5>
+                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item" id="LHCb">
+                    <img src="images/LHCb.png" class="d-block w-100" alt="Large Hadron Collider beauty detector.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>LHCb detector</h5>
+                        <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item" id="ATLAS">
+                    <img src="images/ATLAS.png" class="d-block w-100" alt="ATLAS detector.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>ATLAS detector</h5>
+                        <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item" id="CMS">
+                    <img src="images/CMS.png" class="d-block w-100" alt="CMS detector.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CMS detector</h5>
+                        <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="acc-content" class="m-4">
+            <div id="LHC-msg">
+                <p>The Large Hadron Collider (LHC) is the world’s largest and most powerful particle accelerator. It
+                    consists of a 27-kilometre ring
+                    of superconducting magnets with a number of accelerating structures to boost the energy of the
+                    particles along the way.
+                </p>
+
+                <p>Inside the accelerator, two high-energy particle beams travel at close to the speed of light before
+                    they are made to
+                    collide. The beams travel in opposite directions in separate beam pipes – two tubes kept at
+                    ultrahigh vacuum. They are
+                    guided around the accelerator ring by a strong magnetic field maintained by superconducting
+                    electromagnets. The
+                    electromagnets are built from coils of special electric cable that operates in a superconducting
+                    state, efficiently
+                    conducting electricity without resistance or loss of energy. This requires chilling the magnets to
+                    ‑271.3°C – a
+                    temperature colder than outer space. For this reason, much of the accelerator is connected to a
+                    distribution system of
+                    liquid helium, which cools the magnets, as well as to other supply services.</p>
+
+                <p>Thousands of magnets of different varieties and sizes are used to direct the beams around the
+                    accelerator. These include
+                    1232 dipole magnets 15 metres in length which bend the beams, and 392 quadrupole magnets, each 5–7
+                    metres long, which
+                    focus the beams. Just prior to collision, another type of magnet is used to "squeeze" the particles
+                    closer together to
+                    increase the chances of collisions. The particles are so tiny that the task of making them collide
+                    is akin to firing two
+                    needles 10 kilometres apart with such precision that they meet halfway. <a
+                        href="https://home.cern/science/accelerators/large-hadron-collider">[9]</a>.</p>
+
+                <h4>LHC has four detectors:</h4>
+            </div>
+
+            <div class="flex-container">
+                <div class="my-4 mx-2">
+                    <h3>ALICE</h3>
+                </div>
+                <div class="arrow align-self-end mb-4">
+                    <button class="ALICEarr bg-transparent border-0 acc-arrow" onclick="toggleVisibility('ALICE-msg')">
+                        <img src="./images/icons8-expand-arrow-96.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="clearfix" id="ALICE-msg" style="display:none">
+                <div class="text-center">
+                    <img src="./images/ALICElogo.png" alt="ALICE experiment logo"
+                        class="col-md-6 float-md-end mb-2 ms-md-3" style="width: 10vw">
+                </div>
+                <div class="col-sm">
+                    <p>ALICE (A Large Ion Collider Experiment) is a detector dedicated to heavy-ion physics at the Large
+                        Hadron Collider (LHC). It is designed to study the physics of strongly interacting matter at
+                        extreme
+                        energy densities, where a phase of matter
+                        called quark-gluon plasma forms. </p>
+
+                    <p>All ordinary matter in today’s universe is made up of atoms. Each atom contains a nucleus
+                        composed of
+                        protons and
+                        neutrons (except hydrogen, which has no neutrons), surrounded by a cloud of electrons. Protons
+                        and
+                        neutrons are in turn
+                        made of quarks bound together by other particles called gluons. No quark has ever been observed
+                        in
+                        isolation: the
+                        quarks, as well as the gluons, seem to be bound permanently together and confined inside
+                        composite
+                        particles, such as
+                        protons and neutrons. This is known as confinement.</p>
+
+                    <p>Collisions in the LHC generate temperatures more than 100,000 times hotter than the centre of the
+                        Sun. For part of each
+                        year the LHC provides collisions between lead ions, recreating in the laboratory conditions
+                        similar
+                        to those just after
+                        the Big Bang. Under these extreme conditions, protons and neutrons "melt", freeing the quarks
+                        from
+                        their bonds with the
+                        gluons. This is quark-gluon plasma. The existence of such a phase and its properties are key
+                        issues
+                        in the theory of
+                        quantum chromodynamics (QCD), for understanding the phenomenon of confinement, and for a physics
+                        problem called
+                        chiral-symmetry restoration. The ALICE collaboration studies the quark-gluon plasma as it
+                        expands
+                        and cools, observing
+                        how it progressively gives rise to the particles that constitute the matter of our universe
+                        today.
+                    </p>
+
+                    <p>The ALICE collaboration uses the 10,000-tonne ALICE detector – 26 m long, 16 m high, and 16 m
+                        wide –
+                        to study
+                        quark-gluon plasma. The detector sits in a vast cavern 56 m below ground close to the village of
+                        St
+                        Genis-Pouilly in
+                        France, receiving beams from the LHC <a
+                            href="https://home.cern/science/experiments/alice">[10]</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="my-4 mx-2">
+                    <h3>LHCb</h3>
+                </div>
+                <div class="arrow align-self-end mb-4">
+                    <button class="bg-transparent border-0 acc-arrow" onclick="toggleVisibility('LHCb-msg')">
+                        <img src="./images/icons8-expand-arrow-96.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="clearfix" id="LHCb-msg" style="display:none">
+                <div class="text-center">
+                    <img src="./images/LHCblogo.png" alt="LHCb experiment logo"
+                        class="col-md-6 float-md-start mb-2 me-md-4" style="width: 15vw">
+                </div>
+                <div class="col-sm">
+                    <p>The LHCb experiment is situated at one of the four points around CERN’s Large Hadron Collider
+                        where
+                        beams of protons
+                        are
+                        smashed together, producing an array of different particles.</p>
+                    <p>The aim of the LHCb experiment is to record the decay of particles containing b and anti-b
+                        quarks,
+                        collectively known
+                        as
+                        ‘B mesons’. The experiment’s 4,500 tonne detector is specifically designed to filter out these
+                        particles and the
+                        products of their decay.</p>
+
+                    <p>Rather than flying out in all directions, B mesons formed by the colliding proton beams (and the
+                        particles they decay
+                        into) stay close to the line of the beam pipe, and this is reflected in the design of the
+                        detector.
+                        Other LHC
+                        experiments surround the entire collision point with layers of sub-detectors, like an onion, but
+                        the
+                        LHCb detector
+                        stretches for 20 metres along the beam pipe, with its sub-detectors stacked behind each other
+                        like
+                        books on a shelf.
+                    </p>
+
+                    <p>Each one of LHCb’s sub-detectors specializes in measuring a different characteristic of the
+                        particles
+                        produced by
+                        colliding protons. Collectively, the detector’s components gather information about the
+                        identity,
+                        trajectory,
+                        momentum
+                        and energy of each particle generated, and can single out individual particles from the billions
+                        that spray out from
+                        the
+                        collision point <a href="https://lhcb-outreach.web.cern.ch/detector/">[11]</a>.</p>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="my-4 mx-2">
+                    <h3>ATLAS</h3>
+                </div>
+                <div class="arrow align-self-end mb-4">
+                    <button class="bg-transparent border-0 acc-arrow" onclick="toggleVisibility('ATLAS-msg')">
+                        <img src="./images/icons8-expand-arrow-96.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="clearfix" id="ATLAS-msg" style="display:none">
+                <div class="text-center">
+                    <img src="./images/ATLASlogo.png" alt="ATLAS experiment logo"
+                        class="col-md-6 float-md-end mb-4 ms-md-3" style="width: 20vw">
+                </div>
+                <div class="col-sm">
+                    <p>
+                        The largest volume detector ever constructed for a particle collider, ATLAS, has the dimensions
+                        of a
+                        cylinder, 46m
+                        long, 25m in diameter, and sits in a cavern 100m below ground. The ATLAS
+                        detector weighs 7,000 tonnes, similar to the weight of the Eiffel Tower.</p>
+
+                    <p>The detector itself is a many-layered instrument designed to detect some of the tiniest yet most
+                        energetic particles
+                        ever created on earth. It consists of six different detecting subsystems wrapped concentrically
+                        in
+                        layers around the
+                        collision point to record the trajectory, momentum, and energy of particles, allowing them to be
+                        individually
+                        identified
+                        and measured. A huge magnet system bends the paths of the charged particles so that their
+                        momenta
+                        can be measured as
+                        precisely as possible.</p>
+
+                    <p>Beams of particles travelling at energies up to seven trillion electron-volts, or speeds up to
+                        99.999999% that of
+                        light,
+                        from the LHC collide at the centre of the ATLAS detector producing collision debris in the form
+                        of
+                        new particles
+                        which
+                        fly out in all directions. Over a billion particle interactions take place in the ATLAS detector
+                        every second, a
+                        data
+                        rate equivalent to 20 simultaneous telephone conversations held by every person on the earth.
+                        Only
+                        one in a million
+                        collisions are flagged as potentially interesting and recorded for further study. The detector
+                        tracks and identifies
+                        particles to investigate a wide range of physics, from the study of the Higgs boson and top
+                        quark to
+                        the search for
+                        extra dimensions and particles that could make up dark matter <a
+                            href="https://atlas.cern/Discover/Detector">[12]</a>.</p>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="my-4 mx-2">
+                    <h3>CMS</h3>
+                </div>
+                <div class="arrow align-self-end mb-4">
+                    <button class="bg-transparent border-0 acc-arrow" onclick="toggleVisibility('CMS-msg')">
+                        <img src="./images/icons8-expand-arrow-96.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="clearfix" id="CMS-msg" style="display:none">
+                <div class="text-center">
+                    <img src="./images/CMSlogo.png" alt="CMS experiment logo" class="col-md-6 float-md-end mb-4 ms-md-3"
+                        style="width: 15vw">
+                </div>
+                <div class="col-sm">
+                    <p>The Compact Muon Solenoid (or CMS) detector sits at one of these four collision points of the
+                        LHC. It
+                        is a
+                        general-purpose
+                        detector; that is, it is designed to observe any new physics phenomena that the LHC might
+                        reveal.
+                    </p>
+
+                    <p>CMS acts as a giant, high-speed camera, taking 3D “photographs” of particle collisions from all
+                        directions up to 40
+                        million times each second. Although most of the particles produced in the collisions are
+                        “unstable”,
+                        they transform
+                        rapidly into stable particles that can be detected by CMS. By identifying (nearly) all the
+                        stable
+                        particles produced
+                        in
+                        each collision, measuring their momenta and energies, and then piecing together the information
+                        of
+                        all these
+                        particles
+                        like putting together the pieces of a puzzle, the detector can recreate an “image” of the
+                        collision
+                        for further
+                        analysis.</p>
+
+                    <p>The final particle that CMS observe directly is the muon. Muons belong to the same family of
+                        particles as the
+                        electron,
+                        although they are around 200 times heavier. They are not stopped by the calorimeters, so special
+                        sub-detectors have
+                        to
+                        be built to detect them as they traverse CMS. These sub-detectors are interleaved with the
+                        return
+                        yoke of the
+                        solenoid.
+                        The large magnet of CMS also allows us to measure each muon’s momentum both inside the
+                        superconducting coil (by the
+                        tracking devices) and outside of it (by the muon chambers) <a
+                            href="https://cms.cern/detector">[13]</a>.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="center mt-4">
+            <p style="color:rgb(0, 0, 0)"> Spreading Science! Credits to <a href="https://home.cern/">CERN</a> for the images and info.</p>
+        </div>
+    </footer>
+
+    <script src="./js/dark-mode.js"></script>
+
+</body>
+
+</html>

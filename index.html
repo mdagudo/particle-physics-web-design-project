@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Physics Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+
+        <div class="header">
+            <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+                <div class="align-self-start ms-3 d-flex">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="./images/particle-accelerator.png" width="30" height="30"
+                            class="d-inline-block align-top" alt="logo">
+                        Particle Physics
+                    </a>
+                </div>
+
+                <div class="buttons">
+                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button class="btn-darkmode me-3" onclick="darkMode()">
+                        <img src="./images/moon-half-visible-face-on-light-and-half-on-darkness.png" alt="dark mode button">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ms-4 justify-content-md-end me-4" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Standard
+                                Model</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="fermions.html">Fermions</a></li>
+                                <li><a class="dropdown-item" href="bosons.html">Bosons</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accelerators.html">Accelerators</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="flex-container">
+            <div class="mx-4 my-4 mb-lg-5 mx-lg-5">
+                <h1>Do you want to learn about
+                    particle physics?</h1>
+            </div>
+            <div class="arrow align-self-end mb-4">
+                <a href="#page-cont">
+                    <img src="./images/icons8-expand-arrow-96.png" alt="">
+                </a>
+            </div>
+        </div>
+        <img class="hero mb-5" src="images/fermions1.jpg" alt="">
+
+        <div class="clearfix mx-md-5 mb-3">
+            <h2 class="mb-4 text-center" id="page-cont">The Standard Model</h2>
+            <div class="text-center">
+                <img src="./images/standardmodel.png" class="col-md-6 float-md-end mb-4 ms-md-4"
+                    alt="Standard Model of particle physics.">
+            </div>
+            <div class="col-sm">
+                <p>Physicists have developed a theory called The Standard Model that explains what the world is and what
+                    holds it together.
+                    It is a simple and comprehensive theory that explains all the hundreds of particles and complex
+                    interactions <a href="https://particleadventure.org/standard_model.html">[1]</a>.</p>
+
+                <p>In 1897, J.J. Thomson discovered the first fundamental particle, the electron, using nothing more
+                    than glass vacuum
+                    tubes and wires. More than 100 years later, physicists are still discovering new pieces of the
+                    Standard Model.</p>
+
+                <p>The Standard Model is a predictive framework that does two things. First, it explains what the basic
+                    particles of matter
+                    are. These are things like electrons and the quarks that make up protons and neutrons. Second, it
+                    predicts how these
+                    matter particles interact with each other using “messenger particles.”</p>
+
+                <p>The Standard Model is incredibly good at predicting many aspects of how the world works, but it does
+                    have some holes.
+                    Notably, it does not include any description of gravity. While Einstein’s theory of General
+                    Relativity describes how
+                    gravity works, physicists have not yet discovered a particle that conveys the force of gravity. A
+                    proper “Theory of
+                    Everything” would do everything the Standard Model can, but also include the messenger particles
+                    that communicate how
+                    gravity interacts with other particles.</p>
+
+                <p>Another thing the Standard Model can’t do is explain why any particle has a certain mass – physicists
+                    must measure the
+                    mass of particles directly using experiments. Only after experiments give physicists these exact
+                    masses can they be used
+                    for predictions. The better the measurements, the better the predictions that can be made <a
+                        href="https://astronomy.com/news/2021/12/what-lies-beyond-the-standard-model">[2]</a>.</p>
+
+                <h4 class="text-center my-3">The Standard Model is divided into <a href="fermions.html">fermions</a> and <a href="bosons.html">bosons</a>.</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="center mt-4">
+            <p style="color:rgb(0, 0, 0)"> Spreading Science! Credits to <a href="https://home.cern/">CERN</a> for the
+                images and info.</p>
+        </div>
+    </footer>
+
+    <script src="./js/dark-mode.js"></script>
+
+</body>
+
+</html>
