@@ -16,31 +16,29 @@
     <div class="container-fluid p-0">
 
         <div class="header">
-            <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
                 <div class="align-self-start ms-3 d-flex">
                     <a href="index.html" class="navbar-brand">
-                        <img src="./images/particle-accelerator.png" width="30" height="30" class="d-inline-block align-top"
-                            alt="logo">
+                        <img src="./images/particle-accelerator.png" width="30" height="30"
+                            class="d-inline-block align-top" alt="logo">
                         Particle Physics
                     </a>
                 </div>
-        
-                <div class="buttons">
+
+                <div class="buttons d-flex">
                     <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <button class="btn-darkmode me-3" value="button" onclick="darkMode()">
-                        <img src="./images/moon-half-visible-face-on-light-and-half-on-darkness.png" alt="dark mode button">
-                    </button>
                 </div>
                 <div class="collapse navbar-collapse ms-4 justify-content-md-end me-4" id="collapsibleNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Standard
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Standard
                                 Model</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="fermions.html">Fermions</a></li>
@@ -49,6 +47,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="accelerators.html">Accelerators</a>
+                        </li>
+                        <li class="nav-item ms-md-3">
+                            <button type="button" value="button" class="btn btn-outline-dark" id="dm-btn"
+                                onclick="darkMode()">
+                                Dark mode
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -63,47 +67,70 @@
                 <img src="./images/fermions.jpg" alt="" class="col-md-6 float-md-end mb-4 mx-md-4">
             </div>
             <div class="col-sm">
-                <p>A fermion is any particle that has an odd half-integer (like 1/2, 3/2, and so forth) spin. Quarks and leptons, as well
-                as most composite particles, like protons and neutrons, are fermions.</p>
-                
-                <p>For reasons we do not fully understand, a consequence of the odd half-integer spin is that fermions obey the Pauli
-                Exclusion Principle and therefore cannot co-exist in the same state at same location at the same time <a href="https://particleadventure.org/fermibos.html">[3]</a>.</p>
+                <p>A fermion is any particle that has an odd half-integer (like 1/2, 3/2, and so forth) spin. Quarks and
+                    leptons, as well
+                    as most composite particles, like protons and neutrons, are fermions.</p>
 
-                <p>Thus Fermions are solitary. Only one Fermion may occupy any quantum state – the Fermionic solitariness of electrons is
-                responsible for the structure of molecular matter (in fact for all ‘structure’ in the universe). The degeneracy pressure
-                that stabilizes white dwarf and neutron stars is a result of fermions resisting further compression towards each other.
-                Fermions obey Fermi–Dirac statistics <a href="https://www.clearias.com/fermions-and-bosons/">[4]</a>.</p>
+                <p>For reasons we do not fully understand, a consequence of the odd half-integer spin is that fermions
+                    obey the Pauli
+                    Exclusion Principle and therefore cannot co-exist in the same state at same location at the same
+                    time <a href="https://particleadventure.org/fermibos.html">[3]</a>.</p>
+
+                <p>Thus Fermions are solitary. Only one Fermion may occupy any quantum state – the Fermionic
+                    solitariness of electrons is
+                    responsible for the structure of molecular matter (in fact for all ‘structure’ in the universe). The
+                    degeneracy pressure
+                    that stabilizes white dwarf and neutron stars is a result of fermions resisting further compression
+                    towards each other.
+                    Fermions obey Fermi–Dirac statistics <a
+                        href="https://www.clearias.com/fermions-and-bosons/">[4]</a>.</p>
             </div>
         </div>
 
-        <h4 class="text-center mb-sm-3 mb-lg-5">Fermions are divided into <a href="#quarks">quarks</a> and <a href="#leptons">leptons</a>.</h4>
+        <h4 class="text-center mb-sm-3 mb-lg-5">Fermions are divided into <a href="#quarks">quarks</a> and <a
+                href="#leptons">leptons</a>.</h4>
 
         <div class="clearfix mb-5">
             <img src="images/atom.jpg" class="col-md-6 float-md-start my-md-3 me-md-3 mx-auto d-block"
                 alt="Constitution of the matter. Protons and quarks.">
             <h3 id="quarks">Quarks</h3>
             <div class="col-sm">
-                <p>Quarks (named by Nobel prize-winner Murray Gell-Mann after a quote in the book "Finnegan's Wake" by James Joyce) are currently believed to be the most fundamental particles that exist; that is, they cannot be broken down into
-                further constituent particles. Quarks are also not themselves particles; rather, they refer to families of
-                particles, each containing six members. The quark family of particles consists of up, down, top, bottom, charm and
-                strange particles.</p>
+                <p>Quarks (named by Nobel prize-winner Murray Gell-Mann after a quote in the book "Finnegan's Wake" by
+                    James Joyce) are currently believed to be the most fundamental particles that exist; that is, they
+                    cannot be broken down into
+                    further constituent particles. Quarks are also not themselves particles; rather, they refer to
+                    families of
+                    particles, each containing six members. The quark family of particles consists of up, down, top,
+                    bottom, charm and
+                    strange particles.</p>
 
-                <p>When these quarks are grouped together, the sum of their charges always adds up to a integer charge. For example, if two
-                up quarks and one down quark (with charges of +2/3 and -1/3, respectively) are grouped together, the sum of the charges
-                adds up to +1, and a new particle is created. This new particle is the proton, one of the major components of the atomic
-                nucleus.</p>
+                <p>When these quarks are grouped together, the sum of their charges always adds up to a integer charge.
+                    For example, if two
+                    up quarks and one down quark (with charges of +2/3 and -1/3, respectively) are grouped together, the
+                    sum of the charges
+                    adds up to +1, and a new particle is created. This new particle is the proton, one of the major
+                    components of the atomic
+                    nucleus.</p>
 
-                <p>While quarks all have a fractional charge, a quark will never freely exist in nature; this is because of a fundamental
-                force known as the "strong force." The strong force, which is mediated by force-carrying particles called gluons, acts
-                within the nucleus of atoms and keeps quarks attracted to one another. The force between quarks increases as they move
-                apart, ensuring that a free quark is never detected. The field of study dedicated to the interactions between quarks and
-                gluons is called quantum chromodynamics (QCD).
+                <p>While quarks all have a fractional charge, a quark will never freely exist in nature; this is because
+                    of a fundamental
+                    force known as the "strong force." The strong force, which is mediated by force-carrying particles
+                    called gluons, acts
+                    within the nucleus of atoms and keeps quarks attracted to one another. The force between quarks
+                    increases as they move
+                    apart, ensuring that a free quark is never detected. The field of study dedicated to the
+                    interactions between quarks and
+                    gluons is called quantum chromodynamics (QCD).
                 </p>
 
-                <p>There are four fundamental forces in nature: the strong force (which holds atomic nuclei and quarks together), the weak
-                force (which is responsible for radioactive decay), the electromagnetic force (which helps keep atoms together) and the
-                gravitational force (which acts any object with mass or energy in the universe). Quarks are subject to all of the
-                fundamental forces <a href="https://sciencing.com/difference-between-quarks-leptons-8076741.html">[5]</a>.
+                <p>There are four fundamental forces in nature: the strong force (which holds atomic nuclei and quarks
+                    together), the weak
+                    force (which is responsible for radioactive decay), the electromagnetic force (which helps keep
+                    atoms together) and the
+                    gravitational force (which acts any object with mass or energy in the universe). Quarks are subject
+                    to all of the
+                    fundamental forces <a
+                        href="https://sciencing.com/difference-between-quarks-leptons-8076741.html">[5]</a>.
                 </p>
             </div>
         </div>
@@ -113,23 +140,30 @@
                 class="col-md-6 float-md-end my-md-3 ms-md-3 mx-auto d-block">
             <h3 id="leptons">Leptons</h3>
             <div class="col-sm">
-                <p>Leptons are actually believed to be fundamental particles as well, but the leptons family consist of the electron, electron neutrino, muon, muon neutrino, tau and tau neutrino particles. There are also
-                antiparticles associated with each particle, the antiparticle being the mirror opposite of the corresponding particle
-                (e.g. having the opposite charge).</p>
+                <p>Leptons are actually believed to be fundamental particles as well, but the leptons family consist of
+                    the electron, electron neutrino, muon, muon neutrino, tau and tau neutrino particles. There are also
+                    antiparticles associated with each particle, the antiparticle being the mirror opposite of the
+                    corresponding particle
+                    (e.g. having the opposite charge).</p>
 
-                <p>Leptons have an electric charge of either one fundamental charge unit (defined as the charge of a single electron), in
-                the case of the electron, muon or tau, or no charge, in the case of the corresponding neutrinos.</p>
+                <p>Leptons have an electric charge of either one fundamental charge unit (defined as the charge of a
+                    single electron), in
+                    the case of the electron, muon or tau, or no charge, in the case of the corresponding neutrinos.</p>
 
-                <p>While quarks are subject to all of the fundamental forces; leptons, on the other hand, are subject to all forces except for the strong force. This is because the strong force has a very short range, typically smaller than that of an atomic
-                nucleus; therefore, the strong force is generally confined to this area. The weak, electromagnetic and gravitational
-                forces, on the other hand, can act over a much greater distance than the strong force can <a href="https://sciencing.com/difference-between-quarks-leptons-8076741.html">[5]</a>.</p>
+                <p>While quarks are subject to all of the fundamental forces; leptons, on the other hand, are subject to
+                    all forces except for the strong force. This is because the strong force has a very short range,
+                    typically smaller than that of an atomic
+                    nucleus; therefore, the strong force is generally confined to this area. The weak, electromagnetic
+                    and gravitational
+                    forces, on the other hand, can act over a much greater distance than the strong force can <a
+                        href="https://sciencing.com/difference-between-quarks-leptons-8076741.html">[5]</a>.</p>
             </div>
         </div>
     </div>
 
     <footer>
         <div class="center mt-4">
-            <p style="color:rgb(0, 0, 0)"> Spreading Science! Credits to <a href="https://home.cern/">CERN</a> for the
+            <p> Spreading Science! Credits to <a href="https://home.cern/">CERN</a> for the
                 images and info.</p>
         </div>
     </footer>
