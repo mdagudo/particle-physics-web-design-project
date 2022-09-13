@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@400;751&display=swap');
 
+:root {
+    --gradient: linear-gradient(90deg, rgba(30, 0, 79, 1) 0%, rgba(83, 86, 201, 1) 31%, rgba(83, 23, 135, 1) 60%, rgba(54, 1, 161, 1) 100%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,18 +15,14 @@ body {
 }
 
 .dark-mode {
-    background-color: rgba(39, 39, 39, 0.918);
+    background-color: rgba(29, 29, 29, 0.918);
     color: rgb(235, 231, 231);
 }
 
-.btn-darkmode {
+.btn-outline-dark {
     background-color: transparent;
-    border: none;
-}
-
-.btn-darkmode img {
-    width: 25px;
-    height: 25px;
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255, .55);
 }
 
 .header {
@@ -30,8 +30,8 @@ body {
 }
 
 .navbar {
-    background: rgb(240,235,255);
-    background: linear-gradient(111deg, rgba(240,235,255,1) 0%, rgba(190,154,244,1) 32%, rgba(168,163,255,1) 56%, rgba(163,147,255,1) 81%, rgba(255,203,234,1) 100%);
+    background: rgb(30, 0, 79);
+    background: var(--gradient);
 }
 
 .navbar-brand {
@@ -122,10 +122,11 @@ p {
 footer {
     height: 3vw;
     width:100vw;
-    background: rgb(240,235,255);
-    background: linear-gradient(111deg, rgba(240,235,255,1) 0%, rgba(190,154,244,1) 32%, rgba(168,163,255,1) 56%, rgba(163,147,255,1) 81%, rgba(255,203,234,1) 100%);
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    color:rgba(255, 255, 255, .8);
+    background:rgb(30, 0, 79);
+    background: var(--gradient);
 }
 
 .center {
