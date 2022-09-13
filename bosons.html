@@ -16,31 +16,29 @@
     <div class="container-fluid p-0">
 
         <div class="header">
-            <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
                 <div class="align-self-start ms-3 d-flex">
                     <a href="index.html" class="navbar-brand">
-                        <img src="./images/particle-accelerator.png" width="30" height="30" class="d-inline-block align-top"
-                            alt="logo">
+                        <img src="./images/particle-accelerator.png" width="30" height="30"
+                            class="d-inline-block align-top" alt="logo">
                         Particle Physics
                     </a>
                 </div>
-        
-                <div class="buttons">
+
+                <div class="buttons d-flex">
                     <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <button class="btn-darkmode me-3" value="button" onclick="darkMode()">
-                        <img src="./images/moon-half-visible-face-on-light-and-half-on-darkness.png" alt="dark mode button">
-                    </button>
                 </div>
                 <div class="collapse navbar-collapse ms-4 justify-content-md-end me-4" id="collapsibleNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Standard
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Standard
                                 Model</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="fermions.html">Fermions</a></li>
@@ -50,99 +48,147 @@
                         <li class="nav-item">
                             <a class="nav-link" href="accelerators.html">Accelerators</a>
                         </li>
+                        <li class="nav-item ms-md-3">
+                            <button type="button" value="button" class="btn btn-outline-dark" id="dm-btn"
+                                onclick="darkMode()">
+                                Dark mode
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
 
-        <div class="content mt-4">
-            <div class="clearfix">
-                <h2 class="mb-4 text-center">Bosons are the force carriers</h2>
-                <div class="text-center">
-                    <img src="./images/bosons.jpg" class="col-md-6 float-md-end mb-4 ms-md-3" alt="">
-                </div>
-                <div class="col-sm">
-                    <p>Bosons are the elementary subatomic particles that exert the fundamental forces. They are, in other words, the carriers
-                    of the four fundamental interactions: gravity, electromagnetism, the weak nuclear force and the strong nuclear force.
-                    They do not compose matter but they do allow the forces that govern the behavior of the Universe to emerge from the
-                    quantum world <a href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.</p>
+    <div class="content mt-4">
+        <div class="clearfix">
+            <h2 class="mb-4 text-center">Bosons are the force carriers</h2>
+            <div class="text-center">
+                <img src="./images/bosons.jpg" class="col-md-6 float-md-end mb-4 ms-md-3" alt="">
+            </div>
+            <div class="col-sm">
+                <p>Bosons are the elementary subatomic particles that exert the fundamental forces. They are, in other
+                    words, the carriers
+                    of the four fundamental interactions: gravity, electromagnetism, the weak nuclear force and the
+                    strong nuclear force.
+                    They do not compose matter but they do allow the forces that govern the behavior of the Universe to
+                    emerge from the
+                    quantum world <a
+                        href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.
+                </p>
 
-                    <p>All bosons have either zero spin or an even integer spin. Unlike fermions, bosons do not comply with the Pauli exclusion principle and they may occupy the exact same quantum state as other bosons, as for example in the case of laser light which is formed of coherent, overlapping
-                    photons. In fact, the more bosons there are in a state the more likely that another boson will join that state (Bose
+                <p>All bosons have either zero spin or an even integer spin. Unlike fermions, bosons do not comply with
+                    the Pauli exclusion principle and they may occupy the exact same quantum state as other bosons, as
+                    for example in the case of laser light which is formed of coherent, overlapping
+                    photons. In fact, the more bosons there are in a state the more likely that another boson will join
+                    that state (Bose
                     condensation).</p>
-                    
-                    <p>Examples of bosons include fundamental particles such as photons, gluons, and W and Z bosons (the four force-carrying gauge bosons of the Standard Model), the Higgs boson, and the still-theoretical graviton of quantum gravity; composite
-                    particles (e.g. mesons and stable nuclei of even mass number such as deuterium (with one proton and one neutron, mass
-                    number = 2), helium-4, or lead-208); and some quasiparticles (e.g. Cooper pairs, plasmons, and phonons) <a href="https://www.clearias.com/fermions-and-bosons/">[4]</a>.</p>
-                </div>
+
+                <p>Examples of bosons include fundamental particles such as photons, gluons, and W and Z bosons (the
+                    four force-carrying gauge bosons of the Standard Model), the Higgs boson, and the still-theoretical
+                    graviton of quantum gravity; composite
+                    particles (e.g. mesons and stable nuclei of even mass number such as deuterium (with one proton and
+                    one neutron, mass
+                    number = 2), helium-4, or lead-208); and some quasiparticles (e.g. Cooper pairs, plasmons, and
+                    phonons) <a href="https://www.clearias.com/fermions-and-bosons/">[4]</a>.</p>
             </div>
+            <h4 class="text-center mb-sm-3 mb-lg-5">Bosons are divided into <a href="#gauge">gauge bosons</a> and a <a
+                    href="#scalar">scalar boson</a>.</h4>
+        </div>
 
-            <h4 class="text-center mb-sm-3 mb-lg-5">Bosons are divided into <a href="#gauge">gauge bosons</a> and a <a href="#scalar">scalar boson</a>.</h4>
+        <div class="clearfix mb-5">
+            <h3 id="gauge">Gauge Bosons</h3>
+            <img src="images/higgs_force_field_0_0.jpg" alt="" class="col-md-6 float-md-end my-md-3 ms-md-3 mx-auto d-block">
+            <div class="col-sm">
+                <p>These are responsible for the four forces. Within the Gauge Bosons group there are: photons, gluons,
+                    Z bosons and W bosons.</p>
 
-            <div class="clearfix mb-5">
-                <img src="images/higgs_force_field_0_0.jpg" alt=""
-                    class="col-md-6 float-md-end my-md-3 ms-md-3 mx-auto d-block">
-                <h3 id="gauge">Gauge Bosons</h3>
-                <div class="col-sm">
-                    <p>These are responsible for the four forces. Within the Gauge Bosons group there are: photons, gluons, Z bosons and W bosons.</p>
+                <h4>Photons</h4>
+                <p>Photons are a type of massless bosons with no electrical charge. We can also understand photons as
+                    "the particles of light", so they
+                    allow the existence of the wave spectrum where visible light, microwaves, infrared, gamma rays, and
+                    ultraviolet are
+                    found. , etc.</p>
 
-                    <h4>Photons</h4>
-                        <p>Photons are a type of massless bosons with no electrical charge. We can also understand photons as "the particles of light", so they
-                        allow the existence of the wave spectrum where visible light, microwaves, infrared, gamma rays, and ultraviolet are
-                        found. , etc.</p>
-                        
-                        <p>The electromagnetic force, which is carried by these photons, is the elemental force of interaction that occurs between
-                        electrically charged particles positively or negatively. All electrically charged particles experience this force, which is manifested by an attraction (if they are of different
-                        charge) or a repulsion (if they are of the same charge) <a href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.</p>
+                <p>The electromagnetic force, which is carried by these photons, is the elemental force of interaction
+                    that occurs between
+                    electrically charged particles positively or negatively. All electrically charged particles
+                    experience this force, which is manifested by an attraction (if they are of different
+                    charge) or a repulsion (if they are of the same charge) <a
+                        href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.
+                </p>
 
-                    <h4>Gluons</h4>
-                        <p>Gluons are a type of boson without mass and without electrical charge, but with a color charge, so it not only transmits a force, but also experiences it itself.</p>
-                            
-                        <p>Either way, the important thing is that gluons are responsible for the strong nuclear force. Gluons are the carrier particles for the interaction that constitutes the "glue" of atoms. The strong nuclear force
-                        allows protons and neutrons to stick together (through the strongest interaction in the Universe), thus maintaining the
-                        integrity of the atomic nucleus.</p>
+                <h4>Gluons</h4>
+                <p>Gluons are a type of boson without mass and without electrical charge, but with a color charge, so it
+                    not only transmits a force, but also experiences it itself.</p>
 
-                        <p>These gluonic particles transmit a force 100 times stronger than that transmitted by photons (electromagnetic) and that
-                        is of a shorter range, but enough to prevent the protons, which have a positive charge, repel each other. Gluons ensure
-                        that, despite electromagnetic repulsions, protons and neutrons remain attached to the nucleus of the atom <a href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.</p>
+                <p>Either way, the important thing is that gluons are responsible for the strong nuclear force. Gluons
+                    are the carrier particles for the interaction that constitutes the "glue" of atoms. The strong
+                    nuclear force
+                    allows protons and neutrons to stick together (through the strongest interaction in the Universe),
+                    thus maintaining the
+                    integrity of the atomic nucleus.</p>
 
-                    <h4>Z and W Bosons</h4>
-                        <p>Z bosons are a type of very massive bosons that, together with W, are responsible for mediating the weak nuclear force. Unlike Ws, Z bosons are electrically neutral and somewhat more massive than they. </p>
+                <p>These gluonic particles transmit a force 100 times stronger than that transmitted by photons
+                    (electromagnetic) and that
+                    is of a shorter range, but enough to prevent the protons, which have a positive charge, repel each
+                    other. Gluons ensure
+                    that, despite electromagnetic repulsions, protons and neutrons remain attached to the nucleus of the
+                    atom <a
+                        href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.
+                </p>
 
-                        <p>The Z and W bosons are the particles that make possible the existence of this force that allows protons, neutrons and
-                        electrons to disintegrate into other subatomic particles. </p>
+                <h4>Z and W Bosons</h4>
+                <p>Z bosons are a type of very massive bosons that, together with W, are responsible for mediating the
+                    weak nuclear force. Unlike Ws, Z bosons are electrically neutral and somewhat more massive than
+                    they. </p>
 
-                        <p>We have positively charged (W +) and negatively charged (W-) bosons W. But, at the end of the day, their role is the
-                        same as that of the Z bosons, since they carry the same interaction <a href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.</p>
-                </div>
-            </div>
+                <p>The Z and W bosons are the particles that make possible the existence of this force that allows
+                    protons, neutrons and
+                    electrons to disintegrate into other subatomic particles. </p>
 
-            <div class="clearfix">
-                <img src="images/Header_How_to_make_a_Higgs.jpg" class="col-md-6 float-md-start my-md-3 me-md-3 mx-auto d-block"
-                    alt="">
-                <h3 id="scalar">Scalar Boson</h3>
-                <div class="col-sm">
-                    <p>There's only one scalar boson with spin 0 discovered to date, the Higgs Boson. The discovery of the Higgs boson in 2012 was so important because the detection of this boson particle was proof that
-                    the Higgs field existed. </p>
-                    
-                    <p>That is, the important thing was not the particle itself (the boson), but to confirm the existence of the associated
-                    field. The Higgs field is a quantum field, a kind of cloth that permeates the entire Universe and that it extends
-                    throughout all space, giving rise to a medium that interacts with the fields of the rest of the standard model
-                    particles, providing them with mass.</p>
-
-                    <p>The discovery of the Higgs boson allowed us to understand the fundamental origin of mass. Mass, then, is not an intrinsic property of matter. It is an extrinsic property that depends on the degree to which a
-                    particle is affected by the Higgs field. Those that have the most affinity for this field will be the most massive (like
-                    quarks); while those with the least affinity will be the least massive. If a photon has no mass, it is because it does
-                    not interact with this Higgs field <a href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.</p>
-                </div>
+                <p>We have positively charged (W +) and negatively charged (W-) bosons W. But, at the end of the day,
+                    their role is the
+                    same as that of the Z bosons, since they carry the same interaction <a
+                        href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.
+                </p>
             </div>
         </div>
+
+        <div class="clearfix">
+            <h3 id="scalar">Scalar Boson</h3>
+            <img src="images/Header_How_to_make_a_Higgs.jpg" class="col-md-6 float-md-start my-md-3 me-md-3 mx-auto d-block" alt="">
+            <div class="col-sm">
+                <p>There's only one scalar boson with spin 0 discovered to date, the Higgs Boson. The discovery of the
+                    Higgs boson in 2012 was so important because the detection of this boson particle was proof that
+                    the Higgs field existed. </p>
+
+                <p>That is, the important thing was not the particle itself (the boson), but to confirm the existence of
+                    the associated
+                    field. The Higgs field is a quantum field, a kind of cloth that permeates the entire Universe and
+                    that it extends
+                    throughout all space, giving rise to a medium that interacts with the fields of the rest of the
+                    standard model
+                    particles, providing them with mass.</p>
+
+                <p>The discovery of the Higgs boson allowed us to understand the fundamental origin of mass. Mass, then,
+                    is not an intrinsic property of matter. It is an extrinsic property that depends on the degree to
+                    which a
+                    particle is affected by the Higgs field. Those that have the most affinity for this field will be
+                    the most massive (like
+                    quarks); while those with the least affinity will be the least massive. If a photon has no mass, it
+                    is because it does
+                    not interact with this Higgs field <a
+                        href="https://enorcerna.com/wiki/science/the-6-types-of-bosons-and-their-characteristics/">[6]</a>.
+                </p>
+            </div>
+        </div>
+    </div>
     </div>
 
     <footer>
         <div class="center mt-4">
-            <p style="color:rgb(0, 0, 0)"> Spreading Science! Credits to <a href="https://home.cern/">CERN</a> for the
+            <p> Spreading Science! Credits to <a href="https://home.cern/">CERN</a> for the
                 images and info.</p>
         </div>
     </footer>
